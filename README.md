@@ -60,5 +60,5 @@ https://neofi-naresh.netlify.app/
 
 # Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![neofi](https://user-images.githubusercontent.com/57484597/235343643-2610c9b2-0ca8-490e-b37a-e4481ff8b913.PNG)
 
