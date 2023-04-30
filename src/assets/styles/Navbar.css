@@ -1,0 +1,126 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black-2);
+    padding: 12px 24px;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.logo p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+
+    background: linear-gradient(94.37deg, var(--skyblue-1) -5.94%, var(--purple-1) 115.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    --text-fill-color: transparent;
+}
+
+.navlinks ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 48px;
+}
+
+.navlinks ul li a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--gray);
+}
+
+.navlinks ul li a.selected {
+    font-weight: 600;
+    color: var(--skyblue-2);
+    position: relative;
+}
+
+.navlinks ul li a.selected::after {
+    content: "";
+    width: 130%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -20px;
+    left: -16%;
+    background: var(--skyblue-2);
+}
+
+
+.cta-button button {
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    text-shadow: 0.364154px 0.364154px 0.364154px rgba(0, 0, 0, 0.25);
+    padding: 8px 16px;
+    background: linear-gradient(94.37deg, var(--skyblue-1) -5.94%, var(--purple-1) 115.34%);
+    border-radius: 30px;
+}
+
+
+@media screen and (max-width: 769px) {
+
+    .navbar {
+        padding: 10px 24px;
+    }
+
+    .logo p {
+        display: none;
+    }
+
+    .navlinks ul li a {
+        font-size: 14px;
+    }
+
+    .navlinks ul li a.selected::after {
+        margin-bottom: -16px;
+        left: -14%;
+    }
+
+    .cta-button button {
+        font-weight: 700;
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+    .navbar {
+        padding: 8px 16px;
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+}
